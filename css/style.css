@@ -2,4 +2,118 @@
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+  background-image: linear-gradient(130deg, #dfe6e9 0%, #d7e1e6 100%);
+  margin: 0 auto;
+}
+
+.container {
+  margin: 50px auto;
+  height: 100%;
+  width: 1024px;
+  background-color: #fff;
+  border: 1px #dfe6e9 solid;
+  border-radius: 5px;
+  box-shadow: 0.3px 0.3px rgba(0, 0, 0, 0.8);
+}
+
+.container h2,
+.result-container h3 {
+  color: #0a71c0;
+  text-align: center;
+  padding: 20px 0;
+}
+
+#reminder-input,
+.filter {
+  padding: 8px 15px;
+  margin: 20px 15px 20px 30px;
+  width: 70%;
+  border-radius: 5px;
+  border: 1px solid #dfe6e9;
+}
+
+.btn {
+  border-radius: 5px;
+  padding: 8px 15px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #dfe6e9;
+}
+
+.add-reminder {
+  background-color: #0984e3;
+}
+
+.add-reminder:hover {
+  background-color: #0a71c0;
+}
+
+.reminder-collection {
+  padding: 8px 15px;
+  width: 70%;
+  margin: 20px 15px 20px 30px;
+}
+
+.reminder-collection .reminder-item {
+  list-style-type: none;
+  padding: 5px;
+  margin: 8px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.delete-item i {
+  color: #0a71c0;
+  transition: color 0.2s ease-in-out;
+}
+
+.delete-item i:hover {
+  color: #d63031;
+}
+
+.clear-reminder {
+  background-color: #0c0c0c;
+  margin-left: 30px;
+  transition: color 0.2s ease-in-out;
+}
+
+.clear-reminder:hover {
+  background-color: #363636;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: 90%;
+  }
+  .btn {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    max-width: 90%;
+  }
+  .clear-reminder {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 1065px) {
+  .container {
+    max-width: 90%;
+  }
+  .clear-reminder {
+    margin-bottom: 50px;
+  }
 }

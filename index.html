@@ -16,18 +16,20 @@
     <div class="container">
       <h2>Reminder List</h2>
       <form action="#" id="reminder-form">
-        <input type="text" id="reminder-input" placeholder="New Reminder" />
-        <button type="submit" class="add-reminder">
-          <i class="fas fa-plus-circle"></i>
-        </button>
+        <input
+          type="text"
+          id="reminder-input"
+          placeholder="Create new reminder"
+        />
+        <button type="submit" class="btn add-reminder">Add</button>
       </form>
       <div class="result-container">
         <h3>Reminders</h3>
-        <input type="text" class="filer" placehodler="Filter Reminder..." />
+        <input type="text" class="filter" placeholder="Filter Reminder..." />
         <ul class="reminder-collection">
           <li class="reminder-item">
-            Item One<a href="#" class="delete-item"
-              ><i class="fas fa-minus-circle"></i
+            Item One<a href="#" class="delete-item">
+              <i class="fas fa-minus-circle"></i
             ></a>
           </li>
           <li class="reminder-item">
@@ -41,12 +43,11 @@
             ></a>
           </li>
         </ul>
-        <button class="clear-reminder">
+        <button class="btn clear-reminder">
           Clear Reminders
         </button>
       </div>
     </div>
-
     <script src="./js/app.js"></script>
   </body>
 </html>
