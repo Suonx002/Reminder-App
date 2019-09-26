@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/7116714009.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Reminder List</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Reminder List</h2>
+      <form action="#" id="reminder-form">
+        <input type="text" id="reminder-input" placeholder="New Reminder" />
+        <button type="submit" class="add-reminder">
+          <i class="fas fa-plus-circle"></i>
+        </button>
+      </form>
+      <div class="result-container">
+        <h3>Reminders</h3>
+        <input type="text" class="filer" placehodler="Filter Reminder..." />
+        <ul class="reminder-collection">
+          <li class="reminder-item">
+            Item One<a href="#" class="delete-item"
+              ><i class="fas fa-minus-circle"></i
+            ></a>
+          </li>
+          <li class="reminder-item">
+            Item two<a href="#" class="delete-item"
+              ><i class="fas fa-minus-circle"></i
+            ></a>
+          </li>
+          <li class="reminder-item">
+            Item Three<a href="#" class="delete-item"
+              ><i class="fas fa-minus-circle"></i
+            ></a>
+          </li>
+        </ul>
+        <button class="clear-reminder">
+          Clear Reminders
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
