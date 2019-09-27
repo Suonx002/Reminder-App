@@ -9,12 +9,12 @@
 body {
   font-family: 'Montserrat', sans-serif;
   min-height: 100vh;
-  background-image: linear-gradient(130deg, #dfe6e9 0%, #d7e1e6 100%);
+  background-image: linear-gradient(130deg, #0c90f5 0%, #0575ca 100%);
   margin: 0 auto;
 }
 
 .container {
-  margin: 50px auto;
+  margin: 100px auto;
   height: 100%;
   width: 1024px;
   background-color: #fff;
@@ -34,7 +34,7 @@ body {
 .filter {
   padding: 8px 15px;
   margin: 20px 15px 20px 30px;
-  width: 70%;
+  width: 80%;
   border-radius: 5px;
   border: 1px solid #dfe6e9;
 }
@@ -57,22 +57,27 @@ body {
 }
 
 .reminder-collection {
-  padding: 8px 15px;
-  width: 70%;
+  padding: 8px 10px;
+  width: 80%;
   margin: 20px 15px 20px 30px;
+  border-radius: 5px;
+  border: 1px solid #dfe6e9;
 }
 
 .reminder-collection .reminder-item {
   list-style-type: none;
-  padding: 5px;
+  padding: 5px 10px;
   margin: 8px 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  /* border-radius: 5px; */
+  border-bottom: 1px solid #0a71c0;
 }
 
 .delete-item i {
   color: #0a71c0;
+  cursor: pointer;
   transition: color 0.2s ease-in-out;
 }
 
@@ -84,11 +89,14 @@ body {
   background-color: #0c0c0c;
   margin-left: 30px;
   transition: color 0.2s ease-in-out;
+  margin-bottom: 50px;
 }
 
 .clear-reminder:hover {
   background-color: #363636;
 }
+
+/* Responsive */
 
 @media screen and (max-width: 600px) {
   .container {
@@ -96,7 +104,7 @@ body {
   }
   .btn {
     display: block;
-    margin: 0 auto;
+    margin: 15px auto;
   }
 }
 
@@ -104,16 +112,10 @@ body {
   .container {
     max-width: 90%;
   }
-  .clear-reminder {
-    margin-bottom: 50px;
-  }
 }
 
 @media screen and (max-width: 1065px) {
   .container {
     max-width: 90%;
-  }
-  .clear-reminder {
-    margin-bottom: 50px;
   }
 }
